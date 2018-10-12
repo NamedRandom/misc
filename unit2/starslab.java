@@ -1,7 +1,7 @@
 //mert albayrak starslab 10-04-18
 public class starslab {
   public static void main(String[] args) {
-    for (int i=1;i<5;i++)
+    for (int i=1;i<=5;i++)
     System.out.print("*");
     doubleBlank();
     for (int i=1;i<=4;i++){
