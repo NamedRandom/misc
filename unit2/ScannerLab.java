@@ -1,6 +1,6 @@
 //Mert Albayrak ScannerPractice Lab
 //9-27-18
-import java.util.Scanner;
+import java.util.*;
 public class ScannerLab {
   public static void main(String[] args) {
     Scanner input=new Scanner (System.in); //create scanner

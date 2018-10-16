@@ -11,6 +11,15 @@ public class starslab {
     }
     doubleBlank();
     fourBoxes();
+    bigStar();
+    doubleBlank();
+    angledUpStar();
+    doubleBlank();
+    angledDownStar();
+    doubleBlank();
+    angledToRightStar();
+    doubleBlank();
+    triangleStar();
 
     }
   public static void doubleBlank() {
@@ -34,13 +43,47 @@ public class starslab {
     System.out.println();
     }
   }
+  public static void bigStar() {
+    for (int i=1;i<=5;i++){
+      for (int n=1;n<=11;n++)
+        System.out.print("*");
+      System.out.println();
+    }
+  }
   public static void angledUpStar() {
-
+    for (int i=1;i<=7;i++){
+      for (int n=1;n<=i;n++)
+        System.out.print("*");
+      System.out.println();
+    }
   }
   public static void angledDownStar() {
-
+    for (int i=1;i<=7;i++){
+      for (int n=7;n>=i;n--)
+        System.out.print("*");
+      System.out.println();
+    }
   }
-  public static void widerBoxStar() {
-
+  public static void angledToRightStar() {
+    for (int i=1;i<=7;i++){
+      for (int n=6;n>=i;n--){
+        System.out.print(" ");
+      }
+      for (int n=1;n<=i;n++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
+  public static void triangleStar() {
+    for (int i=1;i<=13;i+=2){
+      for (int n=13;n>=i;n-=2){
+        System.out.print(" ");
+      }
+      for (int n=1;n<=i;n++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
   }
 }
