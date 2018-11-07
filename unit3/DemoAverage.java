@@ -15,6 +15,7 @@
         double ave3 = average(t2,t4,t6,t8);
         System.out.println("The average of " + t2+ ", "+t4 + ", "+t6 + " and " + t8 + " is " +ave3);
         averageAverages(ave1, ave2, ave3);
+        averageAverages(ave2, ave3);
         System.out.println("The End");
   }
 
@@ -34,7 +35,9 @@
   public static double average(double a,double b, double c) {
    return (a + b + c) / 3.0;
   }
-
+  public static double averageAverages(double a, double b) {
+   return (a+b)/2.0;
+  }
   public static void averageAverages(double a1, double a2, double a3){
     double aa = average(a1, a2, a3);
     System.out.println("The averages of the averages " + a1 + ", "+a2 +" and "+a3+" are " +aa);
