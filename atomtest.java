@@ -1,6 +1,5 @@
 public class atomtest{
   public static void main(String[] args) {
-    for (int i=1;i==1;)
-    System.out.print("aymen your jokes suck ");
+    System.out.print("  *    *    *    *\n * *  * *  * *  * *\n*   **   **   **   *\n * *  * *  * *  * *\n  *    *    *    *\n");
   }
 }
