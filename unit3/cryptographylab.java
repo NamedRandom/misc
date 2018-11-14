@@ -5,7 +5,7 @@ public class cryptographylab{
     Scanner heyImAScanner = new Scanner(System.in);
     System.out.print("Enter five words: ");
     String inputString = heyImAScanner.nextLine();
-
     
+
   }
 }
