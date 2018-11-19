@@ -11,6 +11,6 @@ public class grades {
       System.out.print("Enter grade #"+i+": ");
       average=input.nextInt()+average;
     }
-    System.out.println(name+"'s average grade is'"+average/5.0);
+    System.out.println(name+"'s average grade is"+average/5.0);
   }
 }
