@@ -8,5 +8,6 @@ public class cumulativesum {
       System.out.print("Week "+i+": ");
       balance=input.nextInt()+balance;
     }
+    System.out.println()
   }
 }
