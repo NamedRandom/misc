@@ -7,7 +7,7 @@ public class cryptographylab{
     String inputString = heyImAScanner.nextLine();
     System.out.print("Enter five integers: ");
     String inputIntegers = heyImAScanner.nextLine();
-    String firstWordOfS=wordOfString(inputString,1);
+    String firstWordOfS=wordOfString(inputString,1); //separate words of inputString into different vars
     String secondWordOfS=wordOfString(inputString,2);
     String thirdWordOfS=wordOfString(inputString,3);
     String fourthWordOfS=wordOfString(inputString,4);
@@ -23,8 +23,8 @@ public class cryptographylab{
       stringIn=(stringIn.substring(stringIn.indexOf(' ')+1,stringIn.length()));
     }
     boolean isDoesContainsWhiteSpace=stringIn.contains(" ");
-    for(;isDoesContainsWhiteSpace==false;)
+    for(;isDoesContainsWhiteSpace==false;) //off-brand if statement
       return stringIn;
-    return (stringIn.substring(0,stringIn.indexOf(' ')));
+    return (stringIn.substring(0,stringIn.indexOf(' '))); //return 0-first whitespace of stringIn
   }
 }
