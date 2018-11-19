@@ -9,5 +9,6 @@ public class cumulativesum {
       balance=input.nextInt()+balance;
     }
     System.out.println(balance/10.0+" dollars saved on average");
+    System.out.println("Total balance after week 10: "+balance)
   }
 }
