@@ -6,4 +6,3 @@ public class cumulativesum {
     int balance=0;
     }
   }
-}
