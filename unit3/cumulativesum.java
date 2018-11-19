@@ -8,6 +8,6 @@ public class cumulativesum {
       System.out.print("Week "+i+": ");
       balance=input.nextInt()+balance;
     }
-    System.out.println(balance/10.0+" saved on average");
+    System.out.println(balance/10.0+" dollars saved on average");
   }
 }
