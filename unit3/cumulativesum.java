@@ -6,7 +6,8 @@ public class cumulativesum {
     int balance=0;
     for (int i=1;i<=10;i++) {
       System.out.print("How much money to add for week "+i);
-      balance=input.nextInt()+average;
+      balance=input.nextInt()+balance;
+      System.out.println(balance);
     }
   }
 }
