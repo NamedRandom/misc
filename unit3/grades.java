@@ -9,7 +9,7 @@ public class grades {
     int average=0;
     for (int i=1;i<=5;i++) {
       System.out.print("Enter grade #"+i+": ");
-      average = 6;
+      average = average+i;
     }
   }
 }
