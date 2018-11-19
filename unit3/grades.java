@@ -11,5 +11,6 @@ public class grades {
       System.out.print("Enter grade #"+i+": ");
       average = average+i;
     }
+    System.out.println(average/5)
   }
 }
