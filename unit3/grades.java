@@ -5,5 +5,9 @@ public class grades {
     Scanner input=new Scanner(System.in);
     System.out.print("Enter student name: ");
     String name = input.nextLine();
+    int average;
+    for (int i=1;i<=5;i++) {
+
+    }
   }
 }
