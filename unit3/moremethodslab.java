@@ -3,6 +3,6 @@ public class moremethodslab {
 
   }
   public static void printPowersOf2(int goTo){
-    
+  
   }
 }
