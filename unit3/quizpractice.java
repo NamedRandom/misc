@@ -13,7 +13,7 @@ public class quizpractice {
         return (a1+a2+a3+a4+a5)/5.0;
     }
 public static String doIt (String action){
-        return action.toUpperCase
+        return action.toUpperCase();
     }
 public static String userName(String firstName, String lastName, int year){
         return (firstName.charAt(0)+"\\"+lastName+"\\"+year);
