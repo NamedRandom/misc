@@ -12,10 +12,10 @@ public class quizpractice {
     public static double average (int a1, int a2, int a3, int a4, int a5) {
         return (a1+a2+a3+a4+a5)/5.0;
     }
-public static String doIt (String action){
+    public static String doIt (String action){
         return action.toUpperCase()+"!";
     }
-public static String userName(String firstName, String lastName, int year){
+    public static String userName(String firstName, String lastName, int year){
         return (firstName.charAt(0)+"\\"+lastName+"\\"+year);
     }
     public static void main(String[] args) {
