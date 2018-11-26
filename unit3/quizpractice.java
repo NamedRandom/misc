@@ -10,13 +10,13 @@ public class quizpractice {
         return (first+" "+last+" id# "+studentID+"plays  "+sport+" and has a gpa of "+GPA);
     }
     public static double average (int a1, int a2, int a3, int a4, int a5) {
-        return (a1+a2+a3+a4+a5)/5.0
+        return (a1+a2+a3+a4+a5)/5.0;
     }
 public static String doIt (String action){
         return
     }
 public static String userName(String firstName, String lastName, int year){
-        return (firstName.charAt(0)+"\\"+lastName+"\\"+year)
+        return (firstName.charAt(0)+"\\"+lastName+"\\"+year);
     }
 
 
