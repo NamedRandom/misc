@@ -18,9 +18,6 @@ public static String doIt (String action){
 public static String userName(String firstName, String lastName, int year){
         return (firstName.charAt(0)+"\\"+lastName+"\\"+year);
     }
-
-
-
     public static void main(String[] args) {
 
       System.out.println("displacement of an object is "+ displacement(3.5, 12.3, 2.34)); // returns 220.0593
