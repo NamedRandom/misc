@@ -4,7 +4,7 @@ public class quizpractice {
         return=velocity*time+(1/2)*acceleration*Math.pow(time,2)
     }
     public static int remainder (int number){
-                
+        return  
     }
     public static String student (String last, String first, String sport, int studentID,  double GPA) {
         //your code here
