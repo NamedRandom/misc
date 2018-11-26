@@ -25,19 +25,19 @@ public static String userName(String firstName, String lastName, int year){
 
       System.out.println("displacement of an object is "+ displacement(3.5, 12.3, 2.34)); // returns 220.0593
 
-      System.out.println("average of five integers is "“+ average(23, 55, 14, 6, 88) );  // returns 37.2
+      System.out.println("average of five integers is "+ average(23, 55, 14, 6, 88) );  // returns 37.2
 
 System.out.println("the last digit of  12345 is "+ remainder(12345));      // returns 5
 
 
-System.out.println( student(“Rosen”, “Jake”, “basketball”, 12345,  2.78));
-    // returns “Jake Rosen id# 12345 plays basketball and has a GPA of 2.78”
+System.out.println( student("Rosen", "Jake", "basketball", 12345,  2.78));
+    // returns "Jake Rosen id# 12345 plays basketball and has a GPA of 2.78"
 
-System.out.println( doIt(“sing”));
-    // returns “SING!”
+System.out.println( doIt("sing"));
+    // returns "SING!"
 
-System.out.println (userName(“Jake”, “Rosen”, 2001));
-// returns “J\Rosen\2001”
+System.out.println (userName("Jake", "Rosen", 2001));
+// returns "J\Rosen\2001"
     }
 
 
