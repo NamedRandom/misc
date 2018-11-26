@@ -7,7 +7,7 @@ public class quizpractice {
         return=number%10
     }
     public static String student (String last, String first, String sport, int studentID,  double GPA) {
-        return
+        return=(first+" "+last+" id# ")
     }
     public static double average (int a1, int a2, int a3, int a4, int a5) {
         //your code here
