@@ -1,13 +1,13 @@
 //mert albayrak quizpractice 11-26-18
 public class quizpractice {
     public static double displacement(double velocity, double time, double acceleration){
-        return=(velocity*time+(1/2)*acceleration*Math.pow(time,2));
+        return velocity*time+(1/2)*acceleration*Math.pow(time,2);
     }
     public static int remainder (int number){
-        return=(number%10);
+        return number%10;
     }
     public static String student (String last, String first, String sport, int studentID,  double GPA) {
-        return=(first+" "+last+" id# "+studentID+"plays  "+sport+" and has a gpa of "+GPA);
+        return (first+" "+last+" id# "+studentID+"plays  "+sport+" and has a gpa of "+GPA);
     }
     public static double average (int a1, int a2, int a3, int a4, int a5) {
         //your code here
