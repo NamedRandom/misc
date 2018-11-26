@@ -16,7 +16,7 @@ public static String doIt (String action){
         return
     }
 public static String userName(String firstName, String lastName, int year){
-        return
+        return (firstName.charAt(0)+"\\"+lastName+"\\"+year)
     }
 
 
