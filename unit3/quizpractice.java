@@ -1,7 +1,7 @@
 //mert albayrak quizpractice 11-26-18
 public class quizpractice {
 public static double displacement(double velocity, double time, double acceleration){
-        //your code here
+        return=velocity*time+(1/2)*acceleration*Math.pow(time,2)
     }
               public static int remainder (int number){
 	//your code here
