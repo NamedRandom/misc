@@ -23,11 +23,11 @@ public static String userName(String firstName, String lastName, int year){
 
     public static void main(String[] args) {
 
-      System.out.println( “displacement of an object is “ + displacement(3.5, 12.3, 2.34)); // returns 220.0593
+      System.out.println("displacement of an object is "+ displacement(3.5, 12.3, 2.34)); // returns 220.0593
 
-      System.out.println( “average of five integers is “ + average(23, 55, 14, 6, 88) );  // returns 37.2
+      System.out.println("average of five integers is "“+ average(23, 55, 14, 6, 88) );  // returns 37.2
 
-System.out.println(“the last digit of  12345 is “ + remainder (12345));      // returns 5
+System.out.println("the last digit of  12345 is "+ remainder(12345));      // returns 5
 
 
 System.out.println( student(“Rosen”, “Jake”, “basketball”, 12345,  2.78));
