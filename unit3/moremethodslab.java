@@ -53,7 +53,7 @@ public class moremethodslab {
     System.out.println(input.charAt(6));
   }
   public static int countQuarters(int input){
-    boolean isGreaterThan99Cents
+    boolean isGreaterThan99Cents=;
     for(;)
   }
 }
