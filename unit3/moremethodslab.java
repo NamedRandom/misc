@@ -13,4 +13,5 @@ public class moremethodslab {
     for(int i=0;i < reps;i++)
       System.out.println(word);
   }
+  
 }
