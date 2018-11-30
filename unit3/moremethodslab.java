@@ -54,6 +54,6 @@ public class moremethodslab {
   }
   public static int countQuarters(int input){
     input%=100;
-
+    return input/25;
   }
 }
