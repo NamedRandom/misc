@@ -9,7 +9,7 @@ public class moremethodslab {
       System.out.print((int)Math.pow(2,i)+" ");
     System.out.println();
   }
-  public static void printWordNumTimes(String word,int ) {
-    
+  public static void printWordNumTimes(String word,int reps) {
+
   }
 }
