@@ -4,6 +4,8 @@ public class moremethodslab {
     printPowersOf2(10);
     System.out.println("\n\n");
     printWordNumTimes("Print this 5 times",5)
+    System.out.println("\n\n");
+    
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
