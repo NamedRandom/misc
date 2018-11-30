@@ -43,12 +43,12 @@ public class moremethodslab {
       System.out.print("\n");
   }
   public static void vertical(String input){
+    System.out.println(input.charAt(0));
     System.out.println(input.charAt(1));
     System.out.println(input.charAt(2));
     System.out.println(input.charAt(3));
     System.out.println(input.charAt(4));
     System.out.println(input.charAt(5));
     System.out.println(input.charAt(6));
-    System.out.println(input.charAt(7));
   }
 }
