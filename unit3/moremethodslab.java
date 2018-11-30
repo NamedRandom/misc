@@ -11,5 +11,6 @@ public class moremethodslab {
   }
   public static void printWordNumTimes(String word,int reps) {
     for(int i=0;i < reps;i++)
+      System.out.println(word);
   }
 }
