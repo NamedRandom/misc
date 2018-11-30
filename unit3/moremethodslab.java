@@ -5,7 +5,7 @@ public class moremethodslab {
     System.out.println("\n\n");
     printWordNumTimes("Print this 5 times",5);
     System.out.println("\n\n");
-
+    System.out.println(sumab(1,10));
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
@@ -17,7 +17,8 @@ public class moremethodslab {
       System.out.println(word);
   }
   public static int sumab(int a,int b){
-    int output;
+    int output=0;
+
     return
   }
 }
