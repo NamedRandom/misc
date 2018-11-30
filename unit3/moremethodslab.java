@@ -9,8 +9,8 @@ public class moremethodslab {
     System.out.println("\n\n");
     System.out.println(doubleIt(5));
     System.out.println("\n\n");
-    printNumbers(5);
     printNumbers(15);
+    printNumbers(5);
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
