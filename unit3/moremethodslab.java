@@ -2,13 +2,13 @@ public class moremethodslab {
   public static void main(String[] args) {
     printPowersOf2(3);
     printPowersOf2(10);
-    System.out.println("\n\n");
+    System.out.print("\n\n");
     printWordNumTimes("Print this 5 times",5);
-    System.out.println("\n\n");
+    System.out.print("\n\n");
     System.out.println(sumab(1,10));
-    System.out.println("\n\n");
+    System.out.print("\n\n");
     System.out.println(doubleIt(5));
-    System.out.println("\n\n");
+    System.out.print("\n\n");
     printNumbers(15);
     printNumbers(5);
   }
