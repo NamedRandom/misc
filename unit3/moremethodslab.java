@@ -19,7 +19,7 @@ public class moremethodslab {
   public static int sumab(int a,int b){
     int output=b;
     for(int i=a;i<b;i++)
-      output+=i
+      output+=i;
     return output;
   }
 }
