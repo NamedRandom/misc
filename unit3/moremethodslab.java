@@ -52,4 +52,7 @@ public class moremethodslab {
     System.out.println(input.charAt(5));
     System.out.println(input.charAt(6));
   }
+  public static int countQuarters(){
+    
+  }
 }
