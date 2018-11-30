@@ -42,6 +42,10 @@ public class moremethodslab {
       System.out.print("\n");
   }
   public static void vertical(String input){
-    
+    String firstWordOfInput=wordOfString(inputString,1);
   }
+  public static String wordOfString(String stringIn,int wordOfString){
+    for (int i=1;i<wordOfString;i++){
+      stringIn=(stringIn.substring(stringIn.indexOf(' ')+1,stringIn.length()));
+    }
 }
