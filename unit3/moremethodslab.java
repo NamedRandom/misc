@@ -22,4 +22,5 @@ public class moremethodslab {
       output+=i;
     return output;
   }
+  public
 }
