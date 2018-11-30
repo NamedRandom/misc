@@ -29,5 +29,6 @@ public class moremethodslab {
   }
   public static void printNumbers(int a){
     for(int i=0;i<a;i++)
+      System.out.println("["+i+"]");
   }
 }
