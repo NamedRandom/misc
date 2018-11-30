@@ -1,3 +1,4 @@
+//mert albayrak moremethods lab
 public class moremethodslab {
   public static void main(String[] args) {
     printPowersOf2(3);
