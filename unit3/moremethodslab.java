@@ -12,6 +12,7 @@ public class moremethodslab {
     printNumbers(15);
     printNumbers(5);
     printNumbers();
+    vertical("hey now");
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
