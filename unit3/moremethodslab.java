@@ -20,6 +20,6 @@ public class moremethodslab {
     int output=b;
     for(int i=a;i<b;i++)
       output+=i
-    return output
+    return output;
   }
 }
