@@ -14,6 +14,8 @@ public class moremethodslab {
     printNumbers();
     System.out.println();
     vertical("hey now");
+    System.out.println();
+    System.out.println(countQuarters(1278));
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
@@ -53,7 +55,6 @@ public class moremethodslab {
     System.out.println(input.charAt(6));
   }
   public static int countQuarters(int input){
-    input%=100;
     return (input%100)/25;
   }
 }
