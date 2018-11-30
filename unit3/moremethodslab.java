@@ -17,6 +17,7 @@ public class moremethodslab {
       System.out.println(word);
   }
   public static int sumab(int a,int b){
+    int output;
     return
   }
 }
