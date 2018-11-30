@@ -7,7 +7,10 @@ public class moremethodslab {
     System.out.println("\n\n");
     System.out.println(sumab(1,10));
     System.out.println("\n\n");
-    System.out.println(doubleIt(5);
+    System.out.println(doubleIt(5));
+    System.out.println("\n\n");
+    printNumbers(5);
+    printNumbers(15);
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
@@ -31,5 +34,5 @@ public class moremethodslab {
     for(int i=1;i<=a;i++)
       System.out.println("["+i+"]");
   }
-  
+
 }
