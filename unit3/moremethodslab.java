@@ -43,5 +43,11 @@ public class moremethodslab {
   }
   public static void vertical(String input){
     System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
   }
 }
