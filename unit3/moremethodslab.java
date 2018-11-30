@@ -42,7 +42,7 @@ public class moremethodslab {
       System.out.print("\n");
   }
   public static void vertical(String input){
-    System.out.println();
+    System.out.println(input.charAt(1));
     System.out.println();
     System.out.println();
     System.out.println();
