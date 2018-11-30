@@ -31,4 +31,5 @@ public class moremethodslab {
     for(int i=1;i<=a;i++)
       System.out.println("["+i+"]");
   }
+  
 }
