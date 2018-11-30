@@ -35,5 +35,9 @@ public class moremethodslab {
       System.out.print("["+i+"] ");
       System.out.print("\n");
   }
-
+  public static void printNumbers(){
+    for(int i=1;i<=a;i++)
+      System.out.print("["+i+"] ");
+      System.out.print("\n");
+  }
 }
