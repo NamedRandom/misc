@@ -56,6 +56,6 @@ public class moremethodslab {
     boolean isGreaterThan99Cents=input>99;
     for(;isGreaterThan99Cents==true;)
       input-=input%100
-
+    
   }
 }
