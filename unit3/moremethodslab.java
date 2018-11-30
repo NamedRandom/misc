@@ -27,5 +27,7 @@ public class moremethodslab {
   public static int doubleIt(int a){
     return a*2;
   }
-  
+  public static void printNumbers(int a){
+    
+  }
 }
