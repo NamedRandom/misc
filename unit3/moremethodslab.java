@@ -2,7 +2,7 @@ public class moremethodslab {
   public static void main(String[] args) {
     printPowersOf2(3);
     printPowersOf2(10);
-
+    System.out.println("\n\n");
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
@@ -13,5 +13,5 @@ public class moremethodslab {
     for(int i=0;i < reps;i++)
       System.out.println(word);
   }
-  
+
 }
