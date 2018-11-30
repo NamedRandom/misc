@@ -54,6 +54,6 @@ public class moremethodslab {
   }
   public static int countQuarters(int input){
     boolean isGreaterThan99Cents=input>99;
-    for(;)
+    for(;isGreaterThan99Cents==)
   }
 }
