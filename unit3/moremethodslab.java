@@ -28,6 +28,6 @@ public class moremethodslab {
     return a*2;
   }
   public static void printNumbers(int a){
-    
+    for(int i=0;)
   }
 }
