@@ -28,7 +28,7 @@ public class moremethodslab {
     return a*2;
   }
   public static void printNumbers(int a){
-    for(int i=0;i<a;i++)
+    for(int i=1;i<=a;i++)
       System.out.println("["+i+"]");
   }
 }
