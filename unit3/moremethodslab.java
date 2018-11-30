@@ -41,4 +41,7 @@ public class moremethodslab {
       System.out.print("["+i+"] ");
       System.out.print("\n");
   }
+  public static void vertical(String input){
+    
+  }
 }
