@@ -11,6 +11,7 @@ public class moremethodslab {
     System.out.print("\n\n");
     printNumbers(15);
     printNumbers(5);
+    printNumbers
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
