@@ -10,6 +10,6 @@ public class moremethodslab {
     System.out.println();
   }
   public static void printWordNumTimes(String word,int reps) {
-
+    for(int i=0;i < reps;i++)
   }
 }
