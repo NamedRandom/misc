@@ -6,6 +6,8 @@ public class moremethodslab {
     printWordNumTimes("Print this 5 times",5);
     System.out.println("\n\n");
     System.out.println(sumab(1,10));
+    System.out.println("\n\n");
+    
   }
   public static void printPowersOf2(int goTo){
     for (int i=0;i<=goTo;i++)
@@ -23,6 +25,6 @@ public class moremethodslab {
     return output;
   }
   public static int doubleIt(int a){
-    return a*2
+    return a*2;
   }
 }
