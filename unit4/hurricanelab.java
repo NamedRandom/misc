@@ -4,9 +4,11 @@ public class hurricanelab {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int wind;
-    System.out.print("Enter your wind speed: ");
-    wind  = input.nextInt();
-    classifyHurricane(wind);
+    for(int i=0;i<7;i++){
+      System.out.print("Enter your wind speed: ");
+      wind  = input.nextInt();
+      classifyHurricane(wind);
+         }
   }
   public static void classifyHurricane(int wind){
     if(wind>253) System.out.println("Cat 5: World Record Wind Speed!");
