@@ -20,7 +20,8 @@ public class romannumeral {
       else if(temp-100<0)  lessThan100=true;
         else if(temp-50<0)  lessThan50=true;
           else if(temp-10<0)  lessThan10=true;
-
+    if(lessThan10) 10Method(number);
+    if()
     return "number";
   }
 
