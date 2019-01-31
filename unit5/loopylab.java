@@ -66,17 +66,34 @@ public class loopylab   {
 
    //#3
    public static void partOfPhrase (String phrase, char stop){
-     return;
+       String output="";
+       if(phrase.indexOf(stop)==-1) output = phrase;
+       else if(phrase.length()!=0) output=phrase.substring(0,phrase.indexOf(stop));
+       System.out.println(output);
    }
 
    //#4
    public static int divideBy2 (int number){
-     return 1;
+       int counter = 0;
+       if(number%2!=0) return 0;
+       while(number%2==0){
+        number /=2;
+        counter+=1;
+       }    
+       return counter;
    }
 
    //#5
    public static double averageLowHigh (int low, int high){
-     return 2.2;
+        if(high<low) return 0;
+        //double sum=0;
+        //int counter=low;
+        //while(counter!=(high-low)){
+        //    counter+=1;
+        //    
+        //}
+        //return sum/counter;
+        return (low+high)/2;
    }
 
 }
