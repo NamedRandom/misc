@@ -46,6 +46,8 @@ public class luckoftheroll {
                 player2+=rng.nextInt(6)+1;
                 System.out.println(""+rollNumber+"\t"+player1+"\t"+player2);
                 rollNumber += 1; 
+                if(player1 == 21) player2Lost=true;
+                if(player2 == 21) player1Lost=true;
                 if(player2 > 21) player2Lost=true;
                 if(player1 > 21) player1Lost=true; 
                 if(player1Lost && player2Lost) tie=true;
