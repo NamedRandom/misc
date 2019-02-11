@@ -39,7 +39,6 @@ public class guessinggame {
 
 			// ask user if they want to play again
 			System.out.println("Would you like to play again?");
-			String plsStop = input.nextLine();
 			if(input.nextLine().toUpperCase().equals("YES")) playAgain = true;
 
 		}while(playAgain);
