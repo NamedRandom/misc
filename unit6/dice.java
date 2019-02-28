@@ -14,5 +14,12 @@ public class dice {
          counters[0]++;
         }
     System.out.println("Times Ran|Last Roll|2|3|4|5|6|7|8|9|10|11|12|\n\t"+Arrays.toString(counters));
-   }
+    
+    for(int i=0;i<11;i++){
+        System.out.print(""+(i+2)+":");
+        for(int j=0;j<counters[i+2];j++) System.out.print("=");
+    System.out.println();
+    }
+
+    }
 }
