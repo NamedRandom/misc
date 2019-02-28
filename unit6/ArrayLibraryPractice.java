@@ -4,10 +4,12 @@ public class ArrayLibraryPractice {
     printArray(someArray);
   }
   public static void printArray(int[] someArray){
-      System.out.print("[");
-      for(int i:someArray)
-      System.out.print(i+",");
-      System.out.println("]");
+      System.out.print("["); 
+      for(int i:someArray){
+        if(i==someArray.length-1) break;
+        System.out.print(i+",");
+        }
+        System.out.println("]");
   }
 
 }
