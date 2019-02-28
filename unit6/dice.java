@@ -13,6 +13,10 @@ public class dice {
          counters[counters[1]]++;
          counters[0]++;
         }
+        //scale
+        int scale=2;
+        for(int i=0;i<counters.length;i++) counters[i]=counters[i]/scale;
+
     for(int i=0;i<11;i++){
         System.out.print(""+(i+2)+":");
         for(int j=0;j<counters[i+2];j++) System.out.print("=");
