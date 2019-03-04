@@ -22,7 +22,7 @@ public class percenteven {
        }
         Arrays.sort(evenArray);
        System.out.println("There were "+even/arrayLength*100+"% of even numbers.");
-       System.out.println("Even values are: "+Arrays.toString(trimArray(evenArray,theresAZero)));
+       System.out.println("Even values are: "+plsPrintArray(trimArray(evenArray,theresAZero)));
         
         }
 
@@ -42,6 +42,13 @@ public class percenteven {
             }
         }
         return output;
+    }
+    public static String plsPrintArray(int[] input){
+        String output="";
+        for(int i : input){
+            output+=i+", ";
+        }
+        return output.substring(0,output.length()-2);
     }
 
     }
