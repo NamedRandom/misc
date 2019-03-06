@@ -7,16 +7,12 @@ public class cardarray {
 
     public static void main(String[] args){
         String[] cardNames = getCardArray(ranks,suits);
-        System.out.println("All 52 cards: "+plsPrintArray(cardNames)+"\n\n");
+        System.out.println(listCardsOfSuit(cardNames,"Diamonds"));
+        System.out.println(listCardsOfSuit(cardNames,"Hearts"));
+        System.out.println(listCardsOfSuit(cardNames,"Spades"));
+        System.out.println(listCardsOfSuit(cardNames,"Clubs"));
         System.out.println("A poker hand: "+drawCards(cardNames,5)+"\n\n");
         System.out.println(war(cardNames));
-    }
-    public static String plsPrintArray(String[] input){
-        String output="";
-        for(String i : input){
-            output+=i+", ";
-        }
-        return output.substring(0,output.length()-2);
     }
 
     public static String drawCards(String[] input,int cardAmount){
@@ -57,6 +53,14 @@ public class cardarray {
                 output[index]=rank+" of "+suit;
                 index++;
             }
+        }
+        return output;
+    }
+    public static String listCardsOfSuit(String[] cardList,String matchString){
+        
+        String output="*******"+matchString+"*********\n";
+        for(String i:cardList){
+            if(i.contains(matchString)) output+=i+"\n";
         }
         return output;
     }
