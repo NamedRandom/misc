@@ -7,20 +7,25 @@ public class cardarray {
 
     public static void main(String[] args){
         String[] cardNames = getCardArray(ranks,suits);
-        System.out.println(listCardsOfSuit(cardNames,"Diamonds"));
-        System.out.println(listCardsOfSuit(cardNames,"Hearts"));
-        System.out.println(listCardsOfSuit(cardNames,"Spades"));
-        System.out.println(listCardsOfSuit(cardNames,"Clubs"));
+        for(String i:suits){
+        System.out.println(listCardsOfSuit(cardNames,i));
+        }
         System.out.println("A poker hand: "+drawCards(cardNames,5)+"\n\n");
         System.out.println(war(cardNames));
     }
 
     public static String drawCards(String[] input,int cardAmount){
+        int[] drawnCards = new int[cardAmount];
         int temp;
         String output = "";
         Random rng = new Random();
-        for(int i=0;i<cardAmount;i++)
-        output+=input[rng.nextInt(52)]+", ";
+        for(int i=0;i<cardAmount;i++){
+            temp = rng.nextInt(52);
+            if(findIndexOfArray(drawnCards,temp)==-1){
+            output+=input[temp]+", ";
+            }
+            else cardAmount++;
+        }
         return output.substring(0,output.length()-2);
     }
 
@@ -45,6 +50,14 @@ public class cardarray {
         }
         return -1;
     }
+    public static int findIndexOfArray(int[] inputArray, int findMe){
+        for (int i=0;i<inputArray.length;i++) {
+            if(inputArray[i]==findMe){
+                return i;
+            }
+        }
+        return -1;
+    }
     public static String[] getCardArray(String[] ranks,String[] suits){
         int index=0;
         String[] output = new String[52];
@@ -58,7 +71,7 @@ public class cardarray {
     }
     public static String listCardsOfSuit(String[] cardList,String matchString){
         
-        String output="*******"+matchString+"*********\n";
+        String output="*******"+matchString.toUpperCase()+"*********\n";
         for(String i:cardList){
             if(i.contains(matchString)) output+=i+"\n";
         }
