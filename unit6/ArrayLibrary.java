@@ -1,19 +1,22 @@
 import java.util.Arrays;
 import java.util.Random;
 public class ArrayLibrary {
+
     //reverse an array
-    public static int[] reverse(int[] array) {
+    public static void reverse(int[] array) {
         int[] output = new int[array.length];
         int index=0;
         for(int i=array.length-1;i>=0;i--){
             output[index]=array[i];
             index++;
         }
-        return output;
+      for(int i=0;i<output.length;i++)
+            array[i]=output[i];
+    
     }
     
     //shuffle an array
-    public static int[] shuffle(int[] array) {
+    public static void shuffle(int[] array) {
         Random rng = new Random();
         for(int i=0;i<array.length;i++){
            int swap;
@@ -22,7 +25,6 @@ public class ArrayLibrary {
            array[indexToMoveTo]=array[i];
            array[i]=swap;
         }
-        return array;
     }
 
     //create a new array of size parameter
@@ -65,11 +67,14 @@ public class ArrayLibrary {
        int howManyOfNum = 8;
        int containsVar1=3;
        int containsVar2=7;
+       int createLength = 8;
         System.out.println("\nTesting reverse:\nOriginal: "+Arrays.toString(test1));
-        System.out.println("Reversed: "+Arrays.toString(reverse(test1))+"\n");
+        reverse(test1);
+        System.out.println("Reversed: "+Arrays.toString(test1)+"\n");
         System.out.println("Testing shuffle:\nOriginal: "+Arrays.toString(test1));
-        System.out.println("Shuffled: "+Arrays.toString(shuffle(test1))+"\n");
-        System.out.println("Testing create:\n"+Arrays.toString(create(8))+"\n");
+        shuffle(test1);
+        System.out.println("Shuffled: "+Arrays.toString(test1)+"\n");
+        System.out.println("Testing create:\n"+Arrays.toString(create(createLength))+"\n");
         System.out.println("Testing howManyOf:\nArray: "+Arrays.toString(test2)+"\nhowManyOf "+howManyOfNum+": "+howManyOf(test2,howManyOfNum)+"\n");
         System.out.println("Testing contains:\nArray: "+Arrays.toString(test3)+"\ncontains "+containsVar1+": "+contains(test3,containsVar1)+"\ncontains "+containsVar2+": "+contains(test3,containsVar2));
        
