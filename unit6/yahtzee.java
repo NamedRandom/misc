@@ -1,9 +1,30 @@
+import java.util.*;
+
 public class yahtzee {
 
     public static void main(String[] args){
 
+        Scanner input = new Scanner(System.in);
 
+        int[] roll = new int[5];
+        int score = 0;
+        int i=0;
 
+        while(i<roll.length){
+            
+            diceRoll(roll);
+            System.out.println("Your roll: "+Arrays.toString(roll));
+            
+            i++;
+
+        }
+
+    }
+    
+    public static void diceRoll(int[] arr){
+        Random rng = new Random();
+        for(int i=0;i<arr.length;i++)
+            arr[i]=rng.nextInt(6)+1;
     }
 
     public static int getPoints(int[] rolls, int index) {
