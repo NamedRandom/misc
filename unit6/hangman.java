@@ -8,7 +8,7 @@ public class hangman {
         
         String[] wordArr = stringToArr(HANGMANWORD);
         String[] outputArr = new String[HANGMANWORD.length()];
-        Arrays.fill(outputArr,"_");
+        Arrays.fill(outputArr,"_ ");
         Scanner input = new Scanner(System.in);
         String letterIn = "";
         boolean notGuessed=true;
@@ -34,7 +34,7 @@ public class hangman {
     public static void checkIfTrue(String[] wordArr,String[] output,String letterIn){
 
         for(int i=0;i<wordArr.length;i++){
-            if(wordArr[i].toUpperCase().equals(letterIn.toUpperCase())) output[i] = letterIn.toUpperCase();
+            if(wordArr[i].toUpperCase().equals(letterIn.toUpperCase())) output[i] = letterIn.toUpperCase()+" ";
         }
         
 
