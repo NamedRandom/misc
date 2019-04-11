@@ -1,9 +1,13 @@
 public class objectSandbox {
     public static void main(String[] args){
-        TV television = new TV(3);
+        Box[] boxArray = new Box[2];
+        boxArray[0] = new Box(2.5,12.2,6.0);
+        boxArray[1] = new Box(6.0,6.0,6.0);
 
-        System.out.println(television.toString());
-        television.setChannel(123);
-        System.out.println(television.toString());
+        for(Box b:boxArray){
+        System.out.println(b);
+        System.out.println("Box with area "+b.calcArea()+" and volume "+b.calcVolume()+"\n");
+
+        }
     }
 }
