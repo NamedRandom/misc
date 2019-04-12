@@ -16,7 +16,7 @@ public class Rectangle {
     }
 
     public String toString(){
-        return "Area is: "+area()+" Perimeter is: "+perimeter();
+        return "rectangle of length"+length+" and width "+width;
     }
     
     public void setWidth(double input){
