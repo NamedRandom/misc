@@ -37,6 +37,10 @@ public class PhoneTester201819 {
         phone37 = new Phone(37);
         phone37.charge(-20);//Charging...
         System.out.println(phone37);//A phone charged at 37%
-
+        
+        phone37.playGame();
+        System.out.println(phone37);//A phone charged at 37%
+        phone1.playGame();
+        System.out.println(phone1);
     }
 }
