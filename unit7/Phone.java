@@ -3,8 +3,8 @@ import java.util.Random;
 public class Phone {
     private int batteryCharge;
 
-    public String getCharge(){
-        return ""+batteryCharge;
+    public int getCharge(){
+        return batteryCharge;
     }
     public Phone(int c){
         if(c>100) c=100;
@@ -12,6 +12,7 @@ public class Phone {
         batteryCharge=c;
     }
     public Phone(){
+      batteryCharge=0;
     }
     public String toString(){
         return "A phone charged at "+batteryCharge+"%\n";
@@ -28,9 +29,9 @@ public class Phone {
         if(batteryCharge==0) die();
     }
     public void charge(int chargeTime){
-        System.out.println("Charging...");
         if(chargeTime <= 0) return;
-        while(batteryCharge<100 && batteryCharge<batteryCharge+chargeTime){
+        System.out.println("Charging...");
+                while(batteryCharge<100 && batteryCharge<batteryCharge+chargeTime){
             batteryCharge++;
         }
     }
