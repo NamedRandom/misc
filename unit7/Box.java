@@ -4,11 +4,15 @@ public class Box {
     private double length;
 
     public Box(){
+      this(0,0,0);
     }
     public Box(double w,double h,double l){
         width = w;
         height = h;
         length = l;
+    }
+    public Box(double w){
+      this(w,w,w);
     }
     public double getWidth(){
         return width;
@@ -20,7 +24,7 @@ public class Box {
         return length;
     }
     public String toString(){
-        return "box dimensions: "+width+" x "+height+" x "+length;
+        return "box dimensions: "+getWidth()+" x "+getHeight()+" x "+getLength();
     }
     public double calcArea(){
         return 2*(width*height+height*length+height*width);
