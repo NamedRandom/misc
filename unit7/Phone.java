@@ -36,7 +36,10 @@ public class Phone {
         }
     }
     public void playGame(){
-        if(batteryCharge>=1 && batteryCharge <=9) System.out.println("Not enough battery to play game");
+        if(batteryCharge>=1 && batteryCharge <=9){
+            System.out.println("Not enough battery to play game");
+            return;
+         }
         if(batteryCharge == 0) die();
         else {
             System.out.println("Playing game...");
