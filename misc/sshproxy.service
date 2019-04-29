@@ -1,0 +1,14 @@
+[Unit]
+Description=SSH SOCKS5 Proxy on port 9999 to my server
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=asphyxia
+ExecStart=/usr/bin/java -cp /usr/bin sshService
+
+[Install]
+WantedBy=multi-user.target
