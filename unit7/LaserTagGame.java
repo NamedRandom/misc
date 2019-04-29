@@ -51,8 +51,8 @@ public class LaserTagGame {
         Random rng = new Random();
 
         int target = rng.nextInt(arr.length);
-        while(indexOf(p,arr)==target)
-            target = rng.nextInt(arr.length);
+        while(p==arr[target])
+            if(p==arr[target]) target = rng.nextInt(arr.length);
         arr[target].setShieldStrength(arr[target].getShieldStrength()-p.getLaserPower());
 
 
