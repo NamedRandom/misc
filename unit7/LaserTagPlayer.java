@@ -13,6 +13,7 @@ public class LaserTagPlayer {
         shieldStrength=s;
     }
     public LaserTagPlayer(String n){
+        name=n;
         laserPower=rng.nextInt(10)+1;
         shieldStrength=100;
     }
