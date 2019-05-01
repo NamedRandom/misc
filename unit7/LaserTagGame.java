@@ -13,7 +13,7 @@ public class LaserTagGame {
         }
     int round = 1;
 	while(players.size()!=1){
-		System.out.println("Round "+round);
+		System.out.println("\n###############Round "+round+"###############");
 		 syncLives(players);
          for(LaserTagPlayer p: players)
              System.out.println(p);

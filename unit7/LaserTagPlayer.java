@@ -22,7 +22,7 @@ public class LaserTagPlayer {
         return false;
     }
     public String toString(){
-        return "Player "+name+", laserPower "+laserPower+" and shieldStrength "+shieldStrength;
+        return name+", laser @ "+laserPower+" and shield @ "+shieldStrength;
     }
     public void attemptToTag(LaserTagPlayer enemy){
         if(rng.nextInt(2)==1){
