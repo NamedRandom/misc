@@ -1,4 +1,4 @@
-public class objectSandbox {
+public class TVTester {
     public static void main(String[] args){
         TV television = new TV(3);
 
