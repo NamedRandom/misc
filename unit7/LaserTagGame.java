@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LaserTagGame {
+public class LaserTagGameTest {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("How many players? ");
@@ -24,8 +24,13 @@ public class LaserTagGame {
     else System.out.println("It's a draw!");
     }
     public static void syncLives(ArrayList<LaserTagPlayer> players){
+        ArrayList<LaserTagPlayer> toRemove = new ArrayList<LaserTagPlayer>();
+        
         for(int i=0;i<players.size();i++)
-            if(players.get(i).getShieldStrength()<=0) players.remove(players.get(i));
+            if(players.get(i).getShieldStrength()<=0) toRemove.add(players.get(i));
+            
+        players.removeAll(toRemove);
+        
     }
     public static void shoot(LaserTagPlayer p,ArrayList<LaserTagPlayer> arr){
         Random rng = new Random();
