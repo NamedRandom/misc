@@ -12,7 +12,7 @@ public class LaserTagGame {
             players.add(new LaserTagPlayer(name));
         }
     int round = 1;
-	while(players.size()!=1){
+	while(players.size()>1){
 		System.out.println("\n###############Round "+round+"###############");
 		 syncLives(players);
          for(LaserTagPlayer p: players)
@@ -20,7 +20,8 @@ public class LaserTagGame {
          if(players.size()>1) for(LaserTagPlayer p:players) shoot(p,players);
         round++;
 	}
-    System.out.println("\n\nCongrats! "+players.get(0).getName()+" wins!");
+    if(players.size()==1) System.out.println("\n\nCongrats! "+players.get(0).getName()+" wins!");
+    else System.out.println("It's a draw!");
     }
     public static void syncLives(ArrayList<LaserTagPlayer> players){
         for(int i=0;i<players.size();i++)
