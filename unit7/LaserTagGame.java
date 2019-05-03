@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LaserTagGameTest {
+public class LaserTagGame {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("How many players? ");
