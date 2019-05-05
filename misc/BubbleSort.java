@@ -1,17 +1,14 @@
 public class BubbleSort {
-	public static int[] sort(int[] arr){
-		int temp;
-		while(arr!=sort(arr)){
-			
-			for(int i=0;i+1>arr.length;i++){
-				if(arr[i]>arr[i+1]){
-				temp=arr[i];
-				arr[i]=arr[i+1];
-				arr[i+1]=temp;
-				}
-			}
-
-		}
-		return arr;
-	}
+	public static void bubbleSort(int ar[])
+		{
+   		for (int i = (ar.length - 1); i >= 0; i--)
+  		{
+      			for (int j = 1; j <= i; j++)
+      			{
+         			if (ar[j-1] > ar[j])
+         			{
+              				int temp = ar[j-1];
+              				ar[j-1] = ar[j];
+              				ar[j] = temp;
+   } } } }
 }
