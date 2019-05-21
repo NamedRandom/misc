@@ -6,6 +6,9 @@ public class Drink{
         this.type=type;
         if(ounces>=0) this.ounces=ounces;
     }
+    public String toString(){
+        return "There are "+ounces+" ounces of "+type;
+    }
     public void setType(String type){
         this.type=type;
     }
