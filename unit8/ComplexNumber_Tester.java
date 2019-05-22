@@ -34,13 +34,14 @@ public class ComplexNumber_Tester   {
       System.out.println("subtract ("+a5+")and ("+a4+"):     "+ a5.subtract(a4)); 
       System.out.println("subtract ("+a4+")and ("+a5+"):     "+ a4.subtract(a5)); 
       System.out.println("subtract ("+a1+")and ("+a5+"):     "+ a1.subtract(a5)); 
-      // checking multiply()
+     // checking multiply()
       System.out.println();
       System.out.println("multiply ("+a5+")and ("+a4+"):     "+ a5.multiply(a4)); 
       System.out.println("multiply ("+a4+")and ("+a5+"):     "+ a4.multiply(a5)); 
       System.out.println("multiply ("+a1+")and ("+a5+"):     "+ a1.multiply(a5));
       System.out.println("multiply ("+a3+")and ("+a6+"):     "+ a3.multiply(a6));
       System.out.println("multiply ("+a5+")and ("+a2+"):     "+ a5.multiply(a2)); 
+      
    // checking quadrant()
       System.out.println();
       System.out.println(a5+"  is in quadrant "+a5.quadrant()); 
