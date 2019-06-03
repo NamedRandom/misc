@@ -6,6 +6,18 @@ public class PrimeFactorization{
 
         System.out.print("Enter a number: ");
         int number = input.nextInt();
+        if(number<2){
+            System.out.println("Invalid input!");
+            return;
+        }
+        if(number>50000){
+            System.out.print("Anything above 50,000 is not recommended as it will take a long time to proccess. Would you like to continue? (y/n): ");
+            if(input.next().equalsIgnoreCase("n")){
+                System.out.println("Exiting...");
+                return;
+            }
+            else System.out.println("Running...");
+        }
 
         ArrayList<Integer> factors = getFactors(number);
         if(factors.size()==2){  //check if prime before generating list of prime numbers to save time
