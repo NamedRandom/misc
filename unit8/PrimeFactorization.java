@@ -10,21 +10,12 @@ public class PrimeFactorization{
             System.out.println("Invalid input!");
             return;
         }
-        if(number>50000){
-            System.out.print("Anything above 50,000 is not recommended as it will take a long time to proccess. Would you like to continue? (y/n): ");
-            if("n".equalsIgnoreCase(input.next())){
-                System.out.println("Exiting...");
-                return;
-            }
-            else System.out.println("Running...");
-        }
-
         ArrayList<Integer> factors = getFactors(number);
         if(factors.size()==2){  //check if prime before generating list of prime numbers to save time
             System.out.println("Already prime!");
             return;
         }
-        ArrayList<Integer> primes = getPrimeList(number); //list of prime numbers lesser than number
+        ArrayList<Integer> primes = getPrimeList(factors); //list of prime numbers lesser than number
         primes.retainAll(factors); //primes becomes arraylist of prime factors
         ArrayList<Integer> counters = new ArrayList<>();
         while(counters.size()<primes.size()) counters.add(0); //fill counters with however many 0's needed because you can't do operations otherwise
@@ -48,11 +39,13 @@ public class PrimeFactorization{
         factors.add(number);
         return factors;
     }
-    private static ArrayList<Integer> getPrimeList(int limit){
+    private static ArrayList<Integer> getPrimeList(ArrayList<Integer> factors){
+        int limit=factors.get(factors.size()-1);
         ArrayList<Integer> primes = new ArrayList<>();
         for(int i=2;i<limit;i++){
             primes.add(i);
         }
+        primes.retainAll(factors);
         Integer temp; //needed because ArrayList is of type 'Integer', not 'int'
         int k;
         for(int i=0;i<primes.size();i++){
