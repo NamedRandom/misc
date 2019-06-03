@@ -12,7 +12,7 @@ public class PrimeFactorization{
         }
         if(number>50000){
             System.out.print("Anything above 50,000 is not recommended as it will take a long time to proccess. Would you like to continue? (y/n): ");
-            if(input.next().equalsIgnoreCase("n")){
+            if("n".equalsIgnoreCase(input.next())){
                 System.out.println("Exiting...");
                 return;
             }
@@ -26,7 +26,7 @@ public class PrimeFactorization{
         }
         ArrayList<Integer> primes = getPrimeList(number); //list of prime numbers lesser than number
         primes.retainAll(factors); //primes becomes arraylist of prime factors
-        ArrayList<Integer> counters = new ArrayList<Integer>();
+        ArrayList<Integer> counters = new ArrayList<>();
         while(counters.size()<primes.size()) counters.add(0); //fill counters with however many 0's needed because you can't do operations otherwise
         for(int i:primes)
             while(number%i==0){
@@ -38,22 +38,22 @@ public class PrimeFactorization{
             if(counters.get(primes.indexOf(i))==1) output+="*"+i;
             else if(counters.get(primes.indexOf(i))>1) output+="*"+i+"^"+counters.get(primes.indexOf(i)); 
         }
-        output=output.substring(1,output.length()); //remove extra leading *
+        output=output.substring(1); //remove extra leading *
         System.out.println(output);
     }
-    public static ArrayList<Integer> getFactors(int number){
-        ArrayList<Integer> factors = new ArrayList<Integer>();
+    private static ArrayList<Integer> getFactors(int number){
+        ArrayList<Integer> factors = new ArrayList<>();
         for(int i=1;i<number;i++)
             if(number%i==0) factors.add(i);
         factors.add(number);
         return factors;
     }
-    public static ArrayList<Integer> getPrimeList(int limit){
-        ArrayList<Integer> primes = new ArrayList<Integer>();
+    private static ArrayList<Integer> getPrimeList(int limit){
+        ArrayList<Integer> primes = new ArrayList<>();
         for(int i=2;i<limit;i++){
             primes.add(i);
         }
-        Integer temp = Integer.valueOf(0); //needed because ArrayList is of type 'Integer', not 'int'
+        Integer temp; //needed because ArrayList is of type 'Integer', not 'int'
         int k;
         for(int i=0;i<primes.size();i++){
             k = primes.get(i);
