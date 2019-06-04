@@ -34,12 +34,22 @@ public class ArraysMethods_2_Lab{
    //
    public static int arrayRange (int [] a){
      //your code here
-      return 0;
+      int max=a[0];
+      for(int i:a)
+         if(i>max) max=i;
+      int min=a[0];
+      for(int i:a)
+         if(i<min) min=i;
+      return max-min;
    }
    //
    public static int secondLargest (int [] a){
       //your code here
-      return 0;
+      int max=a[0];
+      for(int i:a) if(i>max) max=i;
+      int output=a[0];
+      for(int i:a) if(i>output&&i!=max) output=i;
+      return output;
    }
    public static boolean sum30(int[] a){
     //your code here
