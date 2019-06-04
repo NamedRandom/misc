@@ -52,8 +52,10 @@ public class ArraysMethods_2_Lab{
       return output;
    }
    public static boolean sum30(int[] a){
-    //your code here
-      return false;
+       int counter=0;
+       for(int i:a)
+           if(i==10) counter++;
+      return counter == 3;
    }
    
    //
