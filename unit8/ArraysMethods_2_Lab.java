@@ -1,5 +1,5 @@
 import java.util.*;
-public class ArraysMethods_2_Lab{ 
+public class ArraysMethods_2_Lab{
    public static void main(String[] args){
       int [] arr= {-1, -3,-56, -21, -5, 7, -1, 57, -2, -89, 45, -6, -21, -10, -50,-5};
       Scanner input= new Scanner (System.in);
@@ -59,14 +59,31 @@ public class ArraysMethods_2_Lab{
    }
    
    //
-   public static int [] commonElements(int []a, int [] b){
+   public static int[] commonElements(int []a, int [] b){
      //your code here
-      return new int[]{0};
+      int counter=0;
+      for(int i:a)
+         for(int j:b)
+            if(i==j) counter++;
+      int[] output = new int[counter];
+      counter=0;
+      for(int i:a)
+         for(int j:b)
+            if(i==j){
+               output[counter]=i;
+               counter++;
+            }
+      return output;
    }
    //
    public static int [] moveZeros (int []a ) {
-     //your code here
-      return new int[]{0};
+      int[] output = new int[a.length];
+      int index=0;
+      for(int i:a)
+         if(i==0) index++;
+      for(int i:a)
+         if(i!=0) output[index++] = i;
+      return output;
    }
 }
 /*
