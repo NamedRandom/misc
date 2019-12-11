@@ -1,0 +1,14 @@
+[Unit]
+Description=SSH SOCKS5 Proxy on port 9999 to my server
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=asphy
+ExecStart=autossh -M 0 server -D 9999 -NT
+
+[Install]
+WantedBy=network-online.target
